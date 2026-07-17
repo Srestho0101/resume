@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muntah Mahfuz Srestho - AI & Machine Learning Developer</title>
-    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        /* Custom print styles to ensure it looks perfect when saved as PDF */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
         @media print {
             body {
                 background-color: white;
@@ -18,182 +23,214 @@
             }
             .page-container {
                 box-shadow: none !important;
-                margin: 0 !important;
+                border: none !important;
+                margin: 0 auto !important;
                 padding: 0 !important;
+                width: 100% !important;
                 max-width: 100% !important;
             }
-            /* Ensure links print with their color */
+            /* Ensure links retain their blue color in PDF */
             a {
                 text-decoration: none !important;
-                color: #2563eb !important; /* Tailwind blue-600 */
+                color: #2563eb !important; 
             }
-        }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            .print-hide {
+                display: none !important;
+            }
         }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 py-8 px-4 sm:px-8">
 
-    <!-- Resume Page Container -->
-    <div class="page-container max-w-[850px] mx-auto bg-white p-8 sm:p-12 shadow-lg ring-1 ring-gray-200">
+    <!-- Resume Container -->
+    <div class="page-container max-w-[900px] mx-auto bg-white shadow-xl border border-gray-200">
         
-        <!-- Header Section -->
-        <header class="border-b-2 border-slate-800 pb-6 mb-6">
-            <h1 class="text-4xl font-bold text-slate-900 tracking-tight uppercase mb-3 text-center">
-                Muntah Mahfuz Srestho
-            </h1>
-            <h2 class="text-lg text-slate-600 font-medium text-center mb-4">AI & Machine Learning Developer</h2>
+        <!-- Header Section (Spans full width) -->
+        <header class="bg-slate-900 text-white p-8 sm:px-12 sm:py-10">
+            <h1 class="text-4xl font-bold tracking-tight mb-1 uppercase">Muntah Mahfuz Srestho</h1>
+            <h2 class="text-xl font-medium text-blue-400 mb-5">AI & Machine Learning Developer</h2>
             
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-600">
+            <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-300">
                 <div class="flex items-center gap-1.5">
-                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                    <i data-lucide="map-pin" class="w-4 h-4 text-slate-400"></i>
                     <span>Mohammadpur, Dhaka, Bangladesh</span>
                 </div>
                 <div class="flex items-center gap-1.5">
-                    <i data-lucide="phone" class="w-4 h-4"></i>
+                    <i data-lucide="phone" class="w-4 h-4 text-slate-400"></i>
                     <span>+880 1711-222950</span>
                 </div>
                 <div class="flex items-center gap-1.5">
-                    <i data-lucide="mail" class="w-4 h-4"></i>
-                    <a href="mailto:srestho1298@gmail.com" class="hover:text-blue-600 transition-colors">srestho1298@gmail.com</a>
+                    <i data-lucide="mail" class="w-4 h-4 text-slate-400"></i>
+                    <a href="mailto:srestho1298@gmail.com" class="hover:text-white transition-colors">srestho1298@gmail.com</a>
                 </div>
             </div>
             
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-600 mt-2">
+            <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-300 mt-3">
                 <div class="flex items-center gap-1.5">
-                    <i data-lucide="github" class="w-4 h-4"></i>
-                    <a href="https://github.com/Srestho0101" target="_blank" class="hover:text-blue-600 transition-colors">github.com/Srestho0101</a>
+                    <i data-lucide="github" class="w-4 h-4 text-slate-400"></i>
+                    <a href="https://github.com/Srestho0101" target="_blank" class="hover:text-white transition-colors">github.com/Srestho0101</a>
                 </div>
                 <div class="flex items-center gap-1.5">
-                    <i data-lucide="linkedin" class="w-4 h-4"></i>
-                    <a href="https://www.linkedin.com/in/muntah-mahfuz-srestho-27b261364" target="_blank" class="hover:text-blue-600 transition-colors">LinkedIn</a>
+                    <i data-lucide="linkedin" class="w-4 h-4 text-slate-400"></i>
+                    <a href="https://www.linkedin.com/in/muntah-mahfuz-srestho-27b261364" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
                 </div>
                 <div class="flex items-center gap-1.5">
-                    <i data-lucide="twitter" class="w-4 h-4"></i>
-                    <a href="https://x.com/Moon_Knight1298" target="_blank" class="hover:text-blue-600 transition-colors">@Moon_Knight1298</a>
+                    <i data-lucide="twitter" class="w-4 h-4 text-slate-400"></i>
+                    <a href="https://x.com/Moon_Knight1298" target="_blank" class="hover:text-white transition-colors">@Moon_Knight1298</a>
                 </div>
             </div>
         </header>
 
-        <!-- Professional Summary -->
-        <section class="mb-6">
-            <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-3">Professional Summary</h3>
-            <p class="text-sm text-gray-700 leading-relaxed text-justify">
-                Results-driven AI & Machine Learning Developer specializing in computer vision, NLP, and intelligent agent architectures. Proven ability to build end-to-end ML pipelines, from deploying cloud-based RAG ecosystems to engineering real-time, quantized edge-computing systems. Actively seeking an internship opportunity to apply advanced AI problem-solving skills, contribute to production-grade architectures, and accelerate professional growth within a fast-paced tech environment.
-            </p>
-        </section>
-
-        <!-- Technical Skills -->
-        <section class="mb-6">
-            <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-3">Technical Skills</h3>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-2 text-sm">
-                <div class="font-semibold text-slate-700 md:col-span-1">Languages & Frameworks:</div>
-                <div class="text-gray-700 md:col-span-3">Python, PyTorch, TensorFlow, FastAPI</div>
-                
-                <div class="font-semibold text-slate-700 md:col-span-1">Data Science & AI:</div>
-                <div class="text-gray-700 md:col-span-3">ChromaDB, Mistral AI, NumPy, Pandas, Matplotlib, HuggingFace</div>
-                
-                <div class="font-semibold text-slate-700 md:col-span-1">Tools & Deployment:</div>
-                <div class="text-gray-700 md:col-span-3">Git, Render, SQLite, Docker, Roboflow, Wayland, Arch Linux</div>
-                
-                <div class="font-semibold text-slate-700 md:col-span-1">Core Mathematics:</div>
-                <div class="text-gray-700 md:col-span-3">Differential Calculus, Linear Algebra, Statistical Modeling</div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="mb-6">
-            <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-4">Machine Learning & AI Projects</h3>
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3">
             
-            <!-- Project 1 -->
-            <div class="mb-5">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
-                    <h4 class="font-bold text-slate-800 text-base">Cross-Lingual RAG API for BD Districts</h4>
-                    <span class="text-sm font-medium text-slate-500 italic">Completed</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
-                    <span class="text-sm text-slate-700 font-medium">Python, FastAPI, ChromaDB, Mistral AI, Render</span>
-                    <a href="https://github.com/Srestho0101/bd-guide-RAG-AI" target="_blank" class="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800">
-                        <i data-lucide="github" class="w-3.5 h-3.5"></i>
-                        <span>github.com/Srestho0101/bd-guide-RAG-AI</span>
-                    </a>
-                </div>
-                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
-                    <li>Architected a production-grade RAG backend API using FastAPI and ChromaDB to query a dense SQLite database of Bengali upazila information, achieving a fast ~4.0s average response time.</li>
-                    <li>Implemented cross-lingual semantic matching using Mistral embeddings, dynamically allowing English queries to accurately retrieve native Bengali text contexts.</li>
-                    <li>Resolved complex cloud deployment bottlenecks on Render—including SQLite version constraints and local network routing—to ensure a stable, scalable REST API.</li>
-                </ul>
-            </div>
+            <!-- Left Column: Main Experience & Objective (66%) -->
+            <main class="md:col-span-2 p-8 sm:px-12 sm:py-10 border-r border-gray-100">
+                
+                <!-- Career Objective -->
+                <section class="mb-10">
+                    <h3 class="text-lg font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+                        <i data-lucide="user" class="w-5 h-5 text-blue-600"></i>
+                        Career Objective
+                    </h3>
+                    <p class="text-sm text-gray-700 leading-relaxed text-justify">
+                        Results-driven AI & Machine Learning Developer specializing in computer vision, NLP, and intelligent agent architectures. Proven ability to build end-to-end ML pipelines, from deploying cloud-based RAG ecosystems to engineering real-time, quantized edge-computing systems. Actively seeking an internship opportunity to apply advanced AI problem-solving skills, contribute to production-grade architectures, and accelerate professional growth within a fast-paced tech environment.
+                    </p>
+                </section>
 
-            <!-- Project 2 -->
-            <div class="mb-5">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
-                    <h4 class="font-bold text-slate-800 text-base">Autonomous Cloud Vision Desktop Agent</h4>
-                    <span class="text-sm font-medium text-slate-500 italic">Active Development</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
-                    <span class="text-sm text-slate-700 font-medium">Python, Mistral pixtral-12b, Arch Linux, ydotool</span>
-                    <a href="https://github.com/Srestho0101" target="_blank" class="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800">
-                        <i data-lucide="github" class="w-3.5 h-3.5"></i>
-                        <span>github.com/Srestho0101 (View Repositories)</span>
-                    </a>
-                </div>
-                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
-                    <li>Engineered an autonomous multimodal AI desktop agent optimized for low-spec hardware (operating smoothly within 4GB RAM constraints) by offloading cognitive processing to the Mistral cloud API.</li>
-                    <li>Developed a zero-disk perception pipeline using lossless RAM frame captures and kernel-level scancode injection for Wayland navigation, reducing execution loops to 1-3 seconds.</li>
-                    <li>Implemented algorithmic API rate throttling and sandboxed Linux user execution to maintain system security and prevent free-tier limit exhaustion.</li>
-                </ul>
-            </div>
+                <!-- Projects Section -->
+                <section>
+                    <h3 class="text-lg font-bold text-slate-900 uppercase tracking-wider mb-5 flex items-center gap-2">
+                        <i data-lucide="cpu" class="w-5 h-5 text-blue-600"></i>
+                        Machine Learning & AI Projects
+                    </h3>
+                    
+                    <!-- Project 1 -->
+                    <div class="mb-7 relative pl-4 border-l-2 border-blue-200">
+                        <div class="absolute w-2.5 h-2.5 bg-blue-600 rounded-full -left-[5.5px] top-1.5 ring-4 ring-white"></div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                            <h4 class="font-bold text-slate-900 text-base">Cross-Lingual RAG API for BD Districts</h4>
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full uppercase tracking-wide mt-1 sm:mt-0 whitespace-nowrap">Completed</span>
+                        </div>
+                        <a href="https://github.com/Srestho0101/bd-guide-RAG-AI" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 hover:text-blue-800 mb-2">
+                            <i data-lucide="github" class="w-4 h-4"></i>
+                            github.com/Srestho0101/bd-guide-RAG-AI
+                        </a>
+                        <ul class="list-disc list-outside ml-4 text-sm text-gray-700 space-y-1.5 mt-1">
+                            <li>Architected a production-grade RAG backend API using FastAPI and ChromaDB to query a dense SQLite database of Bengali upazila information, achieving a fast ~4.0s average response time.</li>
+                            <li>Implemented cross-lingual semantic matching using Mistral embeddings, dynamically allowing English queries to accurately retrieve native Bengali text contexts.</li>
+                            <li>Resolved complex cloud deployment bottlenecks on Render—including SQLite version constraints and local network routing—to ensure a stable, scalable REST API.</li>
+                        </ul>
+                    </div>
 
-            <!-- Project 3 -->
-            <div class="mb-2">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
-                    <h4 class="font-bold text-slate-800 text-base">Real-Time Object Detection Drone System</h4>
-                    <span class="text-sm font-medium text-slate-500 italic">Active Development</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
-                    <span class="text-sm text-slate-700 font-medium">YOLOv8n, Google Colab, Roboflow, Arch Linux</span>
-                    <a href="https://github.com/Srestho0101/monster-vision" target="_blank" class="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800">
-                        <i data-lucide="github" class="w-3.5 h-3.5"></i>
-                        <span>github.com/Srestho0101/monster-vision</span>
-                    </a>
-                </div>
-                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
-                    <li>Designed an end-to-end edge-computing pipeline streaming live video to an Arch Linux server, achieving real-time inference using a dynamically quantized YOLOv8n model.</li>
-                    <li>Fine-tuned the YOLO architecture on a custom dataset, significantly optimizing inference speed and targeted detection accuracy for dynamic drone environments.</li>
-                </ul>
-            </div>
-        </section>
+                    <!-- Project 2 -->
+                    <div class="mb-7 relative pl-4 border-l-2 border-slate-200">
+                        <div class="absolute w-2.5 h-2.5 bg-slate-400 rounded-full -left-[5.5px] top-1.5 ring-4 ring-white"></div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                            <h4 class="font-bold text-slate-900 text-base">Autonomous Cloud Vision Desktop Agent</h4>
+                            <span class="text-xs font-bold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-full uppercase tracking-wide mt-1 sm:mt-0 whitespace-nowrap">Active</span>
+                        </div>
+                        <a href="https://github.com/Srestho0101/AI-computer-use" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 hover:text-blue-800 mb-2">
+                            <i data-lucide="github" class="w-4 h-4"></i>
+                            github.com/Srestho0101/AI-computer-use
+                        </a>
+                        <ul class="list-disc list-outside ml-4 text-sm text-gray-700 space-y-1.5 mt-1">
+                            <li>Engineered an autonomous multimodal AI desktop agent optimized for low-spec hardware (operating smoothly within 4GB RAM constraints) by offloading cognitive processing to the Mistral cloud API.</li>
+                            <li>Developed a zero-disk perception pipeline using lossless RAM frame captures and kernel-level scancode injection for Wayland navigation, reducing execution loops to 1-3 seconds.</li>
+                            <li>Implemented algorithmic API rate throttling and sandboxed Linux user execution to maintain system security and prevent free-tier limit exhaustion.</li>
+                        </ul>
+                    </div>
 
-        <!-- Education Section -->
-        <section>
-            <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-3">Education & Independent Study</h3>
-            
-            <div class="mb-3">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
-                    <h4 class="font-bold text-slate-800 text-base">Machine Learning Foundations</h4>
-                    <span class="text-sm font-medium text-slate-500 italic">Independent Study</span>
-                </div>
-                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
-                    <li>Rigorous independent study in Differential Calculus, Linear Algebra, and Statistics specifically tailored for Machine Learning and AI applications.</li>
-                </ul>
-            </div>
+                    <!-- Project 3 -->
+                    <div class="relative pl-4 border-l-2 border-slate-200">
+                        <div class="absolute w-2.5 h-2.5 bg-slate-400 rounded-full -left-[5.5px] top-1.5 ring-4 ring-white"></div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                            <h4 class="font-bold text-slate-900 text-base">Real-Time Object Detection Drone</h4>
+                            <span class="text-xs font-bold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-full uppercase tracking-wide mt-1 sm:mt-0 whitespace-nowrap">Active</span>
+                        </div>
+                        <a href="https://github.com/Srestho0101/monster-vision" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 hover:text-blue-800 mb-2">
+                            <i data-lucide="github" class="w-4 h-4"></i>
+                            github.com/Srestho0101/monster-vision
+                        </a>
+                        <ul class="list-disc list-outside ml-4 text-sm text-gray-700 space-y-1.5 mt-1">
+                            <li>Designed an end-to-end edge-computing pipeline streaming live video to an Arch Linux server, achieving real-time inference using a dynamically quantized YOLOv8n model.</li>
+                            <li>Fine-tuned the YOLO architecture on a custom dataset, significantly optimizing inference speed and targeted detection accuracy for dynamic drone environments.</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
 
-            <div>
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
-                    <h4 class="font-bold text-slate-800 text-base">Continuous Learning & Development</h4>
-                    <span class="text-sm font-medium text-slate-500 italic">Independent Study</span>
-                </div>
-                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
-                    <li>Actively expanding expertise in modern backend deployments, containerization (Docker), and cloud ecosystems to complement ML engineering skills.</li>
-                </ul>
-            </div>
-        </section>
+            <!-- Right Column: Skills & Education (34%) -->
+            <aside class="md:col-span-1 bg-slate-50 p-8 sm:px-8 sm:py-10">
+                
+                <!-- Technical Skills -->
+                <section class="mb-10">
+                    <h3 class="text-lg font-bold text-slate-900 uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <i data-lucide="code" class="w-5 h-5 text-blue-600"></i>
+                        Technical Skills
+                    </h3>
+                    
+                    <div class="mb-5">
+                        <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Languages & Frameworks</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Python</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">PyTorch</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">TensorFlow</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">FastAPI</span>
+                        </div>
+                    </div>
 
+                    <div class="mb-5">
+                        <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Data Science & AI</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">ChromaDB</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Mistral AI</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">HuggingFace</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">NumPy</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Pandas</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Tools & Deployment</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Git</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Docker</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Render</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">SQLite</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Arch Linux</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <h3 class="text-lg font-bold text-slate-900 uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <i data-lucide="graduation-cap" class="w-5 h-5 text-blue-600"></i>
+                        Education
+                    </h3>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-bold text-slate-800 text-sm">Machine Learning Foundations</h4>
+                        <p class="text-xs text-blue-600 font-medium mb-1.5">Independent Study</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Rigorous independent study in Differential Calculus, Linear Algebra, and Statistics specifically tailored for AI applications.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Secondary School Certificate (SSC)</h4>
+                        <p class="text-xs text-blue-600 font-medium mb-1.5">Completed 2026</p>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Recently completed formal secondary examinations, shifting immediate focus to applied computer science and software engineering.
+                        </p>
+                    </div>
+                </section>
+
+            </aside>
+        </div>
     </div>
 
-    <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
     </script>
