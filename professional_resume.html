@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muntah Mahfuz Srestho - ML Engineer Resume</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom print styles to ensure it looks perfect when saved as PDF */
+        @media print {
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+            }
+            .page-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                max-width: 100% !important;
+            }
+            /* Hide any web-specific UI elements if added later */
+            .no-print { display: none; }
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 py-8 px-4 sm:px-8">
+
+    <!-- Resume Page Container -->
+    <div class="page-container max-w-[850px] mx-auto bg-white p-8 sm:p-12 shadow-lg ring-1 ring-gray-200">
+        
+        <!-- Header Section -->
+        <header class="border-b-2 border-slate-800 pb-6 mb-6">
+            <h1 class="text-4xl font-bold text-slate-900 tracking-tight uppercase mb-3 text-center">
+                Muntah Mahfuz Srestho
+            </h1>
+            <h2 class="text-lg text-slate-600 font-medium text-center mb-4">Machine Learning Engineer</h2>
+            
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-600">
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                    <span>Mohammadpur, Dhaka, Bangladesh</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                    <span>+880 1711-222950</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                    <a href="mailto:srestho1298@gmail.com" class="hover:text-blue-600 transition-colors">srestho1298@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-600 mt-2">
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <a href="https://github.com/Srestho0101" target="_blank" class="hover:text-blue-600 transition-colors">github.com/Srestho0101</a>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                    <a href="https://www.linkedin.com/in/muntah-mahfuz-srestho-27b261364" target="_blank" class="hover:text-blue-600 transition-colors">LinkedIn</a>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="twitter" class="w-4 h-4"></i>
+                    <a href="https://x.com/Moon_Knight1298" target="_blank" class="hover:text-blue-600 transition-colors">@Moon_Knight1298</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="mb-6">
+            <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-3">Professional Summary</h3>
+            <p class="text-sm text-gray-700 leading-relaxed text-justify">
+                Self-taught Machine Learning Engineer specializing in computer vision and NLP. Proven ability to build end-to-end ML pipelines, from training custom transformer models to deploying quantized object detection systems on edge devices. Adept at leveraging PyTorch and FastAPI to solve real-world backend and AI challenges in agile, remote environments.
+            </p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mb-6">
+            <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-3">Technical Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-2 text-sm">
+                <div class="font-semibold text-slate-700 md:col-span-1">Languages & Frameworks:</div>
+                <div class="text-gray-700 md:col-span-3">Python, PyTorch, TensorFlow, FastAPI</div>
+                
+                <div class="font-semibold text-slate-700 md:col-span-1">Data Science & ML:</div>
+                <div class="text-gray-700 md:col-span-3">NumPy, Pandas, Matplotlib, Seaborn, HuggingFace</div>
+                
+                <div class="font-semibold text-slate-700 md:col-span-1">Tools & Deployment:</div>
+                <div class="text-gray-700 md:col-span-3">Git, GitHub, Google Colab, Roboflow, Render, Vercel, Netlify, Docker, Arch Linux</div>
+                
+                <div class="font-semibold text-slate-700 md:col-span-1">Core Mathematics:</div>
+                <div class="text-gray-700 md:col-span-3">Differential Calculus, Linear Algebra, Statistical Modeling</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-6">
+            <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-4">Machine Learning Projects</h3>
+            
+            <!-- Project 1 -->
+            <div class="mb-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                    <div class="flex items-center gap-2">
+                        <h4 class="font-bold text-slate-800 text-base">Custom Transformer & Language Models</h4>
+                        <a href="https://github.com/Srestho0101/Trigram-Language-Model" target="_blank" class="text-gray-500 hover:text-blue-600 print:hidden" title="View Source Code">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <span class="text-sm font-medium text-slate-500 italic">Self-Directed</span>
+                </div>
+                <div class="text-sm text-blue-600 mb-2 font-medium">PyTorch, Python, NumPy, Statistical Modeling</div>
+                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
+                    <li>Engineered a custom Trigram Language Model in PyTorch from scratch, implementing tensor multiplication and statistical frequency analysis to achieve optimized validation loss.</li>
+                    <li>Developed a Bigram model implementing the Makemore architecture for efficient character-level text generation and predictive modeling.</li>
+                </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="mb-5">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                    <div class="flex items-center gap-2">
+                        <h4 class="font-bold text-slate-800 text-base">Real-Time Object Detection Drone System</h4>
+                        <a href="https://github.com/Srestho0101/monster-vision" target="_blank" class="text-gray-500 hover:text-blue-600 print:hidden" title="View Source Code">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <span class="text-sm font-medium text-slate-500 italic">Active Development</span>
+                </div>
+                <div class="text-sm text-blue-600 mb-2 font-medium">YOLOv8n, Google Colab, Roboflow, Arch Linux</div>
+                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
+                    <li>Designed an end-to-end edge-computing pipeline streaming live video to an Arch Linux server, achieving real-time inference using a dynamically quantized YOLOv8n model.</li>
+                    <li>Fine-tuned the YOLO architecture on a custom dataset, significantly optimizing inference speed and targeted detection accuracy for dynamic drone environments.</li>
+                </ul>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="mb-2">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                    <div class="flex items-center gap-2">
+                        <h4 class="font-bold text-slate-800 text-base">Backend API Pipeline for E-commerce</h4>
+                        <a href="https://github.com/Srestho0101/data-retriever-bot" target="_blank" class="text-gray-500 hover:text-blue-600 print:hidden" title="View Source Code">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <span class="text-sm font-medium text-slate-500 italic">Active Development</span>
+                </div>
+                <div class="text-sm text-blue-600 mb-2 font-medium">Python, FastAPI, Backend Frameworks</div>
+                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
+                    <li>Architecting a Retrieval-Augmented Generation (RAG) backend using FastAPI for a live E-commerce platform, enabling automated, real-time inventory querying.</li>
+                    <li>Developing tool-use logic to interface seamlessly with production databases, improving data retrieval efficiency and automated product updates.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wider border-b border-gray-300 pb-1 mb-3">Education & Independent Study</h3>
+            
+            <div class="mb-3">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                    <h4 class="font-bold text-slate-800 text-base">Machine Learning Foundations</h4>
+                    <span class="text-sm font-medium text-slate-500 italic">Self-Taught</span>
+                </div>
+                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
+                    <li>Rigorous independent study in Differential Calculus, Linear Algebra, and Statistics specifically tailored for Machine Learning and AI applications.</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                    <h4 class="font-bold text-slate-800 text-base">Continuous Learning & Development</h4>
+                    <span class="text-sm font-medium text-slate-500 italic">Self-Directed</span>
+                </div>
+                <ul class="list-disc list-outside ml-5 text-sm text-gray-700 space-y-1.5">
+                    <li>Actively expanding expertise in modern backend deployments, containerization (Docker), and cloud ecosystems to complement ML engineering skills.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
